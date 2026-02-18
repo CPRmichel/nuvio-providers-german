@@ -1,5 +1,29 @@
 [
   {
+    "id": "sto-ger-dub",
+    "name": "s.to (GER DUB)",
+    "description": "German-dubbed streams from s.to.",
+    "version": "0.4.2",
+    "author": "Cufiy & Hamzo (port)",
+    "supportedTypes": [
+      "movie",
+      "tv"
+    ],
+    "filename": "providers/sto-ger-dub.js",
+    "enabled": true,
+    "logo": "https://git.luna-app.eu/50n50/sources/raw/branch/main/s.to/sto.png",
+    "contentLanguage": [
+      "de"
+    ],
+    "formats": [
+      "m3u8",
+      "mp4"
+    ],
+    "limited": false,
+    "disabledPlatforms": [],
+    "supportsExternalPlayer": true
+  },
+  {
     "id": "template-provider",
     "name": "Template Provider",
     "description": "A starter template for creating Nuvio providers.",
