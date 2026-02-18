@@ -1,9 +1,3 @@
-/**
- * sto-ger-dub - Built from src/sto-ger-dub/
- * Generated: 2026-02-18T19:37:52.165Z
- */
-
-// src/sto-ger-dub/extractor.js
 var __async = (__this, __arguments, generator) => {
   return new Promise((resolve, reject) => {
     var fulfilled = (value) => {
@@ -24,8 +18,8 @@ var __async = (__this, __arguments, generator) => {
     step((generator = generator.apply(__this, __arguments)).next());
   });
 };
-var PROVIDER_NAME = "s.to (GER DUB)";
-var DEFAULT_QUALITY = "720p";
+const PROVIDER_NAME = "s.to (GER DUB)";
+const DEFAULT_QUALITY = "720p";
 function normalizeTitle(value) {
   if (!value)
     return "";
@@ -400,6 +394,17 @@ function base64Decode(str) {
   }
   return output;
 }
+/**
+ * @name global_extractor.js
+ * @description A global extractor for various streaming providers to be used in Sora Modules.
+ * @author Cufiy
+ * @url https://github.com/JMcrafter26/sora-global-extractor
+ * @license CUSTOM LICENSE - see https://github.com/JMcrafter26/sora-global-extractor/blob/main/LICENSE
+ * @date 2026-01-03 19:28:28
+ * @version 1.2.0
+ * @note This file was generated automatically.
+ * The global extractor comes with an auto-updating feature, so you can always get the latest version. https://github.com/JMcrafter26/sora-global-extractor#-auto-updater
+ */
 function globalExtractor(providers) {
   for (const [url2, provider2] of Object.entries(providers)) {
     try {
@@ -1376,7 +1381,7 @@ function soraFetch(_0) {
     }
   });
 }
-var Unbaser = class {
+class Unbaser {
   constructor(base) {
     this.ALPHABET = {
       62: "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
@@ -1407,7 +1412,7 @@ var Unbaser = class {
     });
     return ret;
   }
-};
+}
 function detectUnbaser(source) {
   return source.replace(" ", "").startsWith("eval(function(p,a,c,k,e,");
 }
@@ -1463,17 +1468,4 @@ function unpack(source) {
     return source2;
   }
 }
-
-// src/sto-ger-dub/index.js
-module.exports = { getStreams };
-/**
- * @name global_extractor.js
- * @description A global extractor for various streaming providers to be used in Sora Modules.
- * @author Cufiy
- * @url https://github.com/JMcrafter26/sora-global-extractor
- * @license CUSTOM LICENSE - see https://github.com/JMcrafter26/sora-global-extractor/blob/main/LICENSE
- * @date 2026-01-03 19:28:28
- * @version 1.2.0
- * @note This file was generated automatically.
- * The global extractor comes with an auto-updating feature, so you can always get the latest version. https://github.com/JMcrafter26/sora-global-extractor#-auto-updater
- */
+export { getStreams };
